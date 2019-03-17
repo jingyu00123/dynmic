@@ -1,0 +1,5 @@
+
+
+生成代理类的方法  Proxy.newProxyInstance(helloTest.getClass().getClassLoader(),
+                          helloTest.getClass().getInterfaces(), customInvocationHandler);
+Class<?> cl = getProxyClass0(loader, intfs);
