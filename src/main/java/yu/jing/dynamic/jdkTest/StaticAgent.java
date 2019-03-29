@@ -6,7 +6,7 @@ public class StaticAgent  implements HelloTest{
 
     @Override
     public void say(String name) {
-        getSubject().say("jingyu");
+        getSubject().say(name);
     }
 
     public  HelloTestImpl getSubject(){
@@ -14,5 +14,10 @@ public class StaticAgent  implements HelloTest{
             helloTest = new HelloTestImpl();
         }
         return helloTest;
+    }
+
+    public static void main(String[] args) {
+        StaticAgent s = new StaticAgent();
+        s.say("jingyu");
     }
 }
